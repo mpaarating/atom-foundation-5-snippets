@@ -1,5 +1,7 @@
 ## ZURB Foundation 5 Sublime Text Snippets
 
+### Adapted from Zurb's Foundation 5 Snippets for Sublime Text (https://github.com/zurb/foundation-5-sublime-snippets)
+
 #### Installation on Atom
 
 ###### Mac/Linux Instructions
