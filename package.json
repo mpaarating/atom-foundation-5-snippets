@@ -1,6 +1,6 @@
 {
   "name": "atom-foundation5",
-  "version": "1.0",
+  "version": "0.10",
   "description": "Zurb's Foundation 5 Support with snippets.",
   "activationEvents": [
     "atom-foundation-5-snippets:toggle"
