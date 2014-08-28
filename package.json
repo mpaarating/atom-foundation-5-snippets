@@ -1,0 +1,21 @@
+{
+  "name": "atom-foundation5",
+  "version": "1.0",
+  "description": "Zurb's Foundation 5 Support with snippets.",
+  "activationEvents": [
+    "atom-foundation-5-snippets:toggle"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mpaarating/atom-foundation-5-snipperts"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {},
+  "readme": "# Foundation 5 Support for Atom\n\nProvides [Foundation 5][1] classes and HTML tags.",
+  "readmeFilename": "README.md",
+  "homepage": "https://github.com/mpaarating/atom-foundation-5-snippets",
+  "_id": "atom-foundation-5-snipperts@1.0"
+}

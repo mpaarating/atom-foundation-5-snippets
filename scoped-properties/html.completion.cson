@@ -1,0 +1,32 @@
+'.text.html, .text.css, .source.js':
+  'editor':
+    'completions': [
+
+      # Snippets
+      'zf-html'
+      'zf-accordion'
+      'zf-alert'
+      'zf-breadcrumb'
+      'zf-button-group'
+      'zf-button'
+      'zf-clearing'
+      'zf-dropdown-button'
+      'zf-full-grid'
+      'zf-half-grid'
+      'zf-offcanvas'
+      'zf-orbit-content'
+      'zf-orbit'
+      'zf-pagination'
+      'zf-panel'
+      'zf-pricing-table'
+      'zf-progress-bar'
+      'zf-quarter-grid'
+      'zf-reveal'
+      'zf-sidenav'
+      'zf-split-button'
+      'zf-subnav'
+      'zf-tab'
+      'zf-third-grid'
+      'zf-topbar'
+      'zf-vertical-tab'
+    ]

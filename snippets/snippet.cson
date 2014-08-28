@@ -1,0 +1,449 @@
+'.text.html':
+
+  'Basic HTML Template'
+    'prefix': 'zf-html'
+    'body': """
+      <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>$1</title>
+
+        <!-- Bootstrap -->
+        <link href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/css/foundation.min.css" rel="stylesheet">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/css/normalize.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+      </head>
+      <body>
+        $2
+
+        <!-- jQuery (necessary for Foundation's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/js/foundation.min.js"></script>
+      </body>
+    </html>
+    """
+
+    'Accordion'
+    'prefix': 'zf-accordion'
+    'body': """
+      <dl class="accordion" data-accordion>
+        <dd>
+          <a href="#panel1">Accordion 1</a>
+          <div id="panel1" class="content active">
+            Panel 1 Content
+          </div>
+        </dd>
+        <dd>
+          <a href="#panel2">Accordion 2</a>
+          <div id="panel2" class="content">
+            Panel 2 Content
+          </div>
+        </dd>
+        <dd>
+          <a href="#panel3">Accordion 3</a>
+          <div id="panel3" class="content">
+            Panel 3 Content
+          </div>
+        </dd>
+      </dl>
+    """
+
+    'Alert'
+    'prefix': 'zf-alert'
+    'body': """
+      div data-alert class="alert-box">
+        <!-- Your content goes here -->
+        <a href="#" class="close">&times;</a>
+      </div>
+    """
+
+    'Breadcrumbs'
+    'prefix': 'zf-breadcrumb'
+    'body': """
+      <ul class="breadcrumbs">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li class="unavailable"><a href="#">Gene Splicing</a></li>
+        <li class="current"><a href="#">Cloning</a></li>
+      </ul>
+    """
+
+    'Button Bar'
+    'prefix': 'zf-button-bar'
+    'body': """
+      <div class="button-bar">
+        <ul class="button-group">
+          <li><a href="#" class="button">Button 1</a></li>
+          <li><a href="#" class="button">Button 2</a></li>
+          <li><a href="#" class="button">Button 3</a></li>
+        </ul>
+        <ul class="button-group">
+          <li><a href="#" class="button">Button 1</a></li>
+          <li><a href="#" class="button">Button 2</a></li>
+          <li><a href="#" class="button">Button 3</a></li>
+        </ul>
+      </div>
+    """
+
+    'Button Group'
+    'prefix': 'zf-button-group'
+    'body': """
+      <!-- Button Group Optional Classes: [radius round] -->
+      <ul class="button-group">
+        <!-- Button Color Classes: [secondary alert success] -->
+        <!-- Button Size Classes: [tiny small large] -->
+        <li><a href="#" class="button">Button 1</a></li>
+        <li><a href="#" class="button">Button 2</a></li>
+        <li><a href="#" class="button">Button 3</a></li>
+      </ul>
+    """
+
+    'Button'
+    'prefix': 'zf-button'
+    'body': """
+      <!-- Size Classes: [tiny small large] -->
+      <!-- Radius Classes: [radius round] -->
+      <!-- Color Classes: [secondary success alert] -->
+      <!-- Disabled Class: disabled -->
+      <a href="#" class="button">Default Button</a>
+    """
+
+    'Clearing Thumbs'
+    'prefix': 'zf-clearing'
+    'body': """
+      <ul class="clearing-thumbs" data-clearing>
+        <li><a href="path/to/your/img"><img src="path/to/your/img-th"></a></li>
+        <li><a href="path/to/your/img"><img src="path/to/your/img-th"></a></li>
+        <li><a href="path/to/your/img"><img src="path/to/your/img-th"></a></li>
+      </ul>
+    """
+
+    'Dropdown Button'
+    'prefix': 'zf-dropdown-button'
+    'body': """
+      <!-- Size Classes: [tiny small medium large] -->
+      <!-- Color Classes: [secondary alert success] -->
+      <!-- Radius Classes: [radius round] -->
+      <a href="#" data-dropdown="drop" class="button dropdown">Dropdown Button</a><br>
+      <ul id="drop" data-dropdown-content class="f-dropdown">
+        <li><a href="#">This is a link</a></li>
+        <li><a href="#">This is another</a></li>
+        <li><a href="#">Yet another</a></li>
+      </ul>
+    """
+
+    'Full Grid'
+    'prefix': 'zf-full-grid'
+    'body': """
+      <div class="row">
+        <div class="small-12 medium-12 large-12 columns"></div>
+      </div>
+    """
+
+    'Half Grid'
+    'prefix': 'zf-half-grid'
+    'body': """
+      <div class="row">
+        <div class="small-6 medium-6 large-6 columns"></div>
+        <div class="small-6 medium-6 large-6 columns"></div>
+      </div>
+    """
+
+    'Off Canvas'
+    'prefix': 'zf-offcanvas'
+    'body': """
+      <div class="off-canvas-wrap">
+        <div class="inner-wrap">
+          <nav class="tab-bar">
+
+            <section class="left-small">
+              <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+            </section>
+
+            <section class="right tab-bar-section">
+              <h1 class="title">Foundation</h1>
+            </section>
+
+          </nav>
+
+          <!-- Off Canvas Menu -->
+          <aside class="left-off-canvas-menu">
+            <ul class="off-canvas-list">
+              <li><label>Foundation</label></li>
+              <li><a href="#">The Psychohistorians</a></li>
+              ...
+            </ul>
+          </aside>
+
+          <section class="main-section">
+            <!-- content goes in here -->
+          </section>
+
+        <!-- close the off-canvas menu -->
+        <a class="exit-off-canvas"></a>
+
+        </div>
+      </div>
+    """
+
+    'Orbit Content Slider'
+    'prefix': 'zf-orbit-content'
+    'body': """
+      <ul class="example-orbit-content" data-orbit>
+        <li data-orbit-slide="headline-1">
+          <div>
+            <h2>Headline 1</h2>
+            <h3>Subheadline</h3>
+          </div>
+        </li>
+        <li data-orbit-slide="headline-2">
+          <div>
+            <h2>Headline 2</h2>
+            <h3>Subheadline</h3>
+          </div>
+        </li>
+        <li data-orbit-slide="headline-3">
+          <div>
+            <h2>Headline 3</h2>
+            <h3>Subheadline</h3>
+          </div>
+        </li>
+      </ul>
+    """
+
+    'Orbit Slider'
+    'prefix': 'zf-orbit-slider'
+    'body': """
+      <ul class="example-orbit" data-orbit>
+        <li>
+          <img src="http://placehold.it/1000x300/A92B48/fff" alt="slide 1" />
+          <div class="orbit-caption">
+            Caption One.
+          </div>
+        </li>
+        <li>
+          <img src="http://placehold.it/1000x300/EE964D/fff" alt="slide 2" />
+          <div class="orbit-caption">
+            Caption Two.
+          </div>
+        </li>
+        <li>
+          <img src="http://placehold.it/1000x300/FDC43D/fff" alt="slide 3" />
+          <div class="orbit-caption">
+            Caption Three.
+          </div>
+        </li>
+      </ul>
+    """
+
+    'Pagination'
+    'prefix': 'zf-pagination'
+    'body': """
+      <ul class="pagination">
+        <li class="arrow unavailable"><a href="">&laquo;</a></li>
+        <li class="current"><a href="">1</a></li>
+        <li><a href="">2</a></li>
+        <li><a href="">3</a></li>
+        <li><a href="">4</a></li>
+        <li class="unavailable"><a href="">&hellip;</a></li>
+        <li><a href="">12</a></li>
+        <li><a href="">13</a></li>
+        <li class="arrow"><a href="">&raquo;</a></li>
+      </ul>
+    """
+    'Pane'
+    'prefix': 'zf-panel'
+    'body': """
+      <div class="panel">
+        <h5>This is a callout panel.</h5>
+        <p>It's a little ostentatious, but useful for important content.</p>
+      </div>
+    """
+
+    'Pricing Table'
+    'prefix': 'zf-pricing-table'
+    'body': """
+      <ul class="pricing-table">
+        <li class="title">Standard</li>
+        <li class="price">$99.99</li>
+        <li class="description">An awesome description</li>
+        <li class="bullet-item">1 Database</li>
+        <li class="bullet-item">5GB Storage</li>
+        <li class="bullet-item">20 Users</li>
+        <li class="cta-button"><a class="button" href="#">Buy Now</a></li>
+      </ul>
+    """
+
+    'Progress Bar'
+    'prefix': 'zf-progress-bar'
+    'body': """
+      <!-- Container Width Classes: [small-# large-#] -->
+      <!-- Color Classes: [secondary alert success] -->
+      <!-- Radius Classes: [radius round] -->
+      <!-- Progress Width Classes: [1 - 100] -->
+      <div class="progress">
+        <span class="meter" style="width: 100%"></span>
+      </div>
+    """
+
+    'Quarter Grid'
+    'prefix': 'zf-quarter-grid'
+    'body': """
+      <div class="row">
+        <div class="small-3 medium-3 large-3 columns"></div>
+        <div class="small-3 medium-3 large-3 columns"></div>
+        <div class="small-3 medium-3 large-3 columns"></div>
+        <div class="small-3 medium-3 large-3 columns"></div>
+      </div>
+    """
+
+    'Reveal'
+    'prefix': 'zf-reveal'
+    'body': """
+      <!-- Size Classes: [small medium large xlarge expand] -->
+      <div id="myModal" class="reveal-modal" data-reveal>
+        <h2>Awesome. I have it.</h2>
+        <p class="lead">Your couch.  It is mine.</p>
+        <p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+    """
+
+    'Side Nav'
+    'prefix': 'zf-sidenav'
+    'body': """
+      <ul class="side-nav">
+        <li class="active"><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+      </ul>
+    """
+
+    'Split Button'
+    'prefix': 'zf-split-button'
+    'body': """
+      <!-- Size Classes: [tiny small medium large] -->
+      <!-- Color Classes: [secondary alert success] -->
+      <!-- Radius Classes: [radius round] -->
+      <a href="#" class="button split">Split Button <span data-dropdown="drop"></span></a><br>
+      <ul id="drop" class="f-dropdown" data-dropdown-content>
+        <li><a href="#">This is a link</a></li>
+        <li><a href="#">This is another</a></li>
+        <li><a href="#">Yet another</a></li>
+      </ul>
+    """
+
+    'Sub Nav'
+    'prefix': 'zf-subnav'
+    'body': """
+      <dl class="sub-nav">
+        <dt>Filter:</dt>
+        <dd class="active"><a href="#">All</a></dd>
+        <dd><a href="#">Active</a></dd>
+        <dd><a href="#">Pending</a></dd>
+        <dd><a href="#">Suspended</a></dd>
+      </dl>
+    """
+
+    'Tab'
+    'prefix': 'zf-tab'
+    'body': """
+      <dl class="tabs" data-tab>
+        <dd class="active"><a href="#panel1">Tab 1</a></dd>
+        <dd><a href="#panel2">Tab 2</a></dd>
+        <dd><a href="#panel3">Tab 3</a></dd>
+        <dd><a href="#panel4">Tab 4</a></dd>
+      </dl>
+      <div class="tabs-content">
+        <div class="content active" id="panel1">
+          <p>This is the first panel of the basic tab example. This is the first panel of the basic tab example.</p>
+        </div>
+        <div class="content" id="panel2">
+          <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
+        </div>
+        <div class="content" id="panel3">
+          <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
+        </div>
+        <div class="content" id="panel4">
+          <p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
+        </div>
+      </div>
+    """
+
+    'Third Grid'
+    'prefix': 'zf-third-grid'
+    'body': """
+      <div class="row">
+        <div class="small-4 medium-4 large-4 columns"></div>
+        <div class="small-4 medium-4 large-4 columns"></div>
+        <div class="small-4 medium-4 large-4 columns"></div>
+      </div>
+    """
+
+    'Topbar'
+    'prefix': 'zf-topbar'
+    'body': """
+      <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="#">Something</a></h1>
+          </li>
+          <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+        </ul>
+
+        <section class="top-bar-section">
+          <!-- Right Nav Section -->
+          <ul class="right">
+            <li class="active"><a href="#">Right Nav Button Active</a></li>
+            <li class="has-dropdown">
+              <a href="#">Right Button with Dropdown</a>
+              <ul class="dropdown">
+                <li><a href="#">First link in dropdown</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Left Nav Section -->
+          <ul class="left">
+            <li><a href="#">Left Nav Button</a></li>
+          </ul>
+        </section>
+      </nav>
+    """
+
+    'Vertical Tab'
+    'prefix': 'zf-vertical-tab'
+    'body': """
+      <dl class="tabs vertical" data-tab>
+        <dd class="active"><a href="#panel1a">Tab 1</a></dd>
+        <dd><a href="#panel2a">Tab 2</a></dd>
+        <dd><a href="#panel3a">Tab 3</a></dd>
+        <dd><a href="#panel4a">Tab 4</a></dd>
+      </dl>
+      <div class="tabs-content vertical">
+        <div class="content active" id="panel1a">
+          <p>Panel 1.</p>
+        </div>
+        <div class="content" id="panel2a">
+          <p>Panel 2.</p>
+        </div>
+        <div class="content" id="panel3a">
+          <p>Panel 3.</p>
+        </div>
+        <div class="content" id="panel4a">
+          <p>Panel 4.</p>
+        </div>
+      </div>
+    """
