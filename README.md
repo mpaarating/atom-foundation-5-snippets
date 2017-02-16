@@ -1,6 +1,6 @@
 ## ZURB Foundation 5 Atom Snippets
 
-### Adapted from Zurb's Foundation 5 Snippets for Sublime Text (https://github.com/zurb/foundation-5-sublime-snippets)
+### Adapted from [Zurb's Foundation 5 Snippets for Sublime Text](https://github.com/zurb/foundation-5-sublime-snippets)
 
 #### Installation on Atom
 
@@ -13,7 +13,7 @@
 
 2. Clone repository into packages folder
 
-`git clone https://github.com/mpaarating/foundation-5-sublime-snippets.git`
+`git clone https://github.com/mpaarating/atom-foundation-5-sublime-snippets.git`
 
 * Each snippet is prefixed with `zf-` (ZURB Foundation).
 * Each snippet is singular, unless the name of the component ends in an s (offcanvas)
